@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👑 REHAN - BHAI ( ORIGINAL) 2016...🤞 👑</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        /* Button Animation */
+        @keyframes scale-shadow {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .animated-button {
+            animation: scale-shadow 1s infinite ease-in-out;
+        }
+
+        /* Countdown Animation */
+        .countdown {
+            color: red;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { color: red; }
+            50% { color: white; }
+            100% { color: red; }
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center bg-no-repeat bg-[url('logo.jpg')] text-white flex items-center justify-center min-h-screen">
+
+    <div class="text-center p-8 bg-black/60 rounded-xl shadow-lg ">
+        <h2 class="text-2xl font-bold mb-4">CRICKET PREDICTION KA GOD <i class="fa fa-telegram text-xl"></i></h2>
+        <h1 class="text-xl font-semibold mb-6">👑 REHAN - BHAI ( ORIGINAL) 2016...🤞 👑</h1>
+        
+        <!-- Countdown Timer -->
+        <p class="text-lg mb-4">Free joining ends in <span id="countdown" class="countdown">60</span> seconds</p>
+
+        <!-- Buttons -->
+        <button onclick="redirectToLink()" class="animated-button py-3 px-16 bg-blue-500 rounded-full text-xl mb-4 hover:bg-blue-600 transition-all duration-200">
+            <i class="fab fa-telegram mr-2"></i> JOIN NOW
+        </button>
+
+        <h3 class="text-lg mb-3">✌️ MOST TRUST & OLDEST ✌️</h3>
+        <h3 class="text-lg mb-3">✔️ TNPL ALL MATCH PASS ✔️</h3>
+        <h3 class="text-lg mb-4">🤝 JALDI JUDO OR LAKHO KAMAO 🤝</h3>
+
+        <button onclick="redirectToLink()" class="py-3 px-6 bg-green-500 rounded-full text-xl mb-6 hover:bg-green-600 transition-all duration-200">
+            Join Now For Free
+        </button>
+
+        <h3 class="text-lg mb-4">🤝💯 REHAN - BHAI ( ORIGINAL) 2016...🤞 KE SATH MATLAB JEET KE SATH 💯</h3>
+    </div>
+
+    <script>
+        // Countdown Timer Functionality
+        function countdown() {
+            let seconds = 60;
+            const countdownElement = document.getElementById("countdown");
+            countdownElement.innerText = seconds;
+
+            const timer = setInterval(function() {
+                seconds--;
+                countdownElement.innerText = seconds;
+                if (seconds <= 0) {
+                    clearInterval(timer);
+                }
+            }, 1000);
+        }
+
+        // Redirect to Telegram link
+        function redirectToLink() {
+            window.location.href = "https://t.me/+5g8m5owLUNI1ZTNl";
+        }
+
+        // Start the countdown on page load
+        window.onload = countdown;
+    </script>
+
+</body>
+</html>
